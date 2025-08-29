@@ -30,8 +30,10 @@ if __name__ == '__main__':
     # 创建一个子进程，每个任务由由一个独立的子进程执行
 
     p1 = EatProcess(name="吃饭", name_user="小明")
+
     p2 = PlayGamrProcess(name="游戏")
 
     # 启动子进程
     p1.start()
+    p1.join()  # 让主进程阻塞，等待p1执行完毕后再继续往下执行
     p2.start()
