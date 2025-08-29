@@ -6,7 +6,8 @@ server_addr = ('192.168.217.231', 8000)
 # client客户端直接负责连接
 client_socket = Socket(AF_INET, SOCK_STREAM)
 
-# ''代表本地的所有地址 这里填写服务器的ip 连接上我们的服务端
+# ''代表本地的所有地址 这里填写服务器的ip 连接上我们的服务端 当 TCP 客户端程序想要和 TCP 服务端程序进行通信的时候必须要先建立连接
+# TCP 客户端程序一般不需要绑定端口号，因为客户端是主动发起建立连接的
 client_socket.connect(('192.168.217.231', 8000))
 
 while True:
