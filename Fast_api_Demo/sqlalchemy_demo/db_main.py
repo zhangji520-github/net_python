@@ -3,7 +3,7 @@ from datetime import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, mapped_column, Mapped
 # 创建数据库引擎
-engine = create_engine(r'sqlite:///./sqlalchemy_demo/sqlorm_Demo.db', echo=True)
+engine = create_engine(r'sqlite:///E:\Workspace\ai\net_python\Fast_api_Demo\sqlalchemy_demo\sqlorm_Demo.db', echo=True)
 
 # 定义一个模型类的基类
 
